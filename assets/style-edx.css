@@ -50,12 +50,12 @@ h2, h3, .title .subtitle, .fake-heading {
   font-weight: 400;
 }
 .title, .title.left {
-  background-image: url(logo-edx-x-right.svg);
+  background-image: url(http://cptvitamin.github.io/remark-edx/assets/logo-edx-x-right.svg);
   background-size: contain;
   background-position: right;
 }
 .title.right {
-  background-image: url(logo-edx-x-left.svg);
+  background-image: url(http://cptvitamin.github.io/remark-edx/assets/logo-edx-x-left.svg);
   background-size: contain;
   background-position: left;
 }
@@ -64,7 +64,7 @@ h2, h3, .title .subtitle, .fake-heading {
   margin: 1em 2em; 
   padding: 1em 2.5em 1em 2.5em;
   font-size: 1.7em; 
-  background-image: url(logo-edx.svg);
+  background-image: url(http://cptvitamin.github.io/remark-edx/assets/logo-edx.svg);
   background-position: bottom right; 
   background-size:auto;
   background-repeat: no-repeat;
