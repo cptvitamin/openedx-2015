@@ -52,12 +52,12 @@ h2, h3, .title .subtitle, .fake-heading {
 .title, .title.left {
   background-image: url(http://cptvitamin.github.io/remark-edx/assets/logo-edx-x-right.svg);
   background-size: contain;
-  background-position: right;
+  background-position: right !important;
 }
 .title.right {
   background-image: url(http://cptvitamin.github.io/remark-edx/assets/logo-edx-x-left.svg);
   background-size: contain;
-  background-position: left;
+  background-position: left !important;
 }
 .remark-slide { border-top: 15px solid #009CfC; }
 .remark-slide-content { 
@@ -65,7 +65,7 @@ h2, h3, .title .subtitle, .fake-heading {
   padding: 1em 2.5em 1em 2.5em;
   font-size: 1.7em; 
   background-image: url(http://cptvitamin.github.io/remark-edx/assets/logo-edx.svg);
-  background-position: bottom right; 
+  background-position: bottom right !important; 
   background-size:auto;
   background-repeat: no-repeat;
 }
