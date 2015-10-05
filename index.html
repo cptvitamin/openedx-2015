@@ -24,7 +24,26 @@ class: title middle left
     <script src="//gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create({ratio: '16:9'});
+      var slideshow = remark.create({
+        ratio: '16:9',
+        // Navigation options
+        navigation: {
+          // Enable or disable navigating using scroll
+          // Default: true
+          // Alternatives: false
+          scroll: false,
+
+          // Enable or disable navigation using touch
+          // Default: true
+          // Alternatives: false
+          touch: true,
+
+          // Enable or disable navigation using click
+          // Default: false
+          // Alternatives: true
+          click: true
+        },
+    });
     </script>
   </body>
 </html>
