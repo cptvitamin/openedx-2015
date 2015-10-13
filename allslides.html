@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open edX Conference - Accessibility</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href='//cptvitamin.github.io/remark-talks/assets/style.css' rel='stylesheet' type='text/css'>
+    <link href='//cptvitamin.github.io/remark-edx/assets/style-edx.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+<label for="source" class="sr">Slide Deck</label>
+<textarea id="source" aria-label="Enter your slide deck here in markdown format">
+
+class: title middle left
+
+# Developing for Accessibility
+
+.subtitle[Open edX Conference - 2015<br> #OPENEDX2015]
+
+---
+## What is accessibility?
+
+<dl>
+<dt>Accessibility:</dt>
+<dd>The degree to which a product, device, or environment is available to a person</dd>
+<dd><em>Measured in relative terms</em></dd>
+  </dl>
+
+<!--
+Something or some place that is accessible to one person may not be accessible to someone else. Since many products, devices and environments are directly accessible to most people, accessibility is often used to refer to the ability of a person with a disability to access or use it.
+-->
+
+---
+## Types of Accessibility
+
+<dl>
+  <dt>Direct:</dt>
+    <dd>Some products, devices, and environments are natively accessible. They just work "out of the box." Anyone can use them unassisted. Sometimes special effort and consideration is given during design to achieve a directly accessible result.</dd>
+  <dt>Indirect:</dt>
+    <dd>Indirect access means that accessibility can be achieved by designing the product, device or environment to be compatible with a person's assistive technology.</dd>
+</dl>
+
+---
+
+## Assistive Technology (AT)
+
+<dl>
+  <dt>Assistive technology</dt>
+  <dd>devices or software that people can use to help them access or use a product, device or environment.</dd>
+  <dd>enables people to perform tasks that they may be unable to accomplish, or have difficulty with.</dd>
+  <dd>can enhance or change how a person interacts with products, devices or environments.</dd>
+</dl> 
+
+<!--
+Common examples of hardware AT include wheelchairs, prosthetic limbs, custom keyboards, or hearing aids. AT can also come in the form of software, like screen readers, screen magnifiers, and speech input (speech-to-text) software.
+-->
+
+---
+
+class: title middle right
+
+## Accessibility at edX
+
+.subtitle[Past, Present, Future]
+
+---
+## edX Accessibility Initiative
+ 
+* Demonstrated commitment since our inception
+* Gives the Open edX Platform a market advantage
+* Important to our learners, partners, and community
+* Is part of our Goals, Vision, and Mission
+ 
+<!--
+ 
+ * Not a new initiative
+  * Transcripts
+  * Outside Audits
+  
+* Subject to terms of legal agreement with the Department of Justice
+-->
+
+---
+
+## Goals, Values, Vision, and Mission
+
+* "Expand access to education for *everyone*." - Goals
+* "Quality education for *everyone*, everywhere." - Vision
+* "To create the world's leading learning destination site and platform so that *everyone* around the world can become better educated." - Mission
+
+The word *everyone* is by definition "inclusive." It includes all humans, regardless of race, gender, class, creed, age, nationality, physical location, sexual orientation, or ability. 
+
+<!--
+The word everyone appears frequently in language we use to describe our goals, our values and our vision:
+
+-->
+
+---
+
+## Accessibility Policy
+
+![Screenshot of edX Accessibility Policy which is posted on our public website](assets/accessibilitypolicy.png)
+
+<!-- 
+
+Adopted a formal accessibility policy on April 2nd, 2015
+edX's commitment to ensure that our website, mobile applications, and platform are accessible to individuals with disabilities and that they permit content providers to develop and post accessible content
+Web Content Accessibility Guidelines ("WCAG") 2.0 AA, published by the World Wide Web Consortium;
+to permit content providers to post course content in a format that conforms with WCAG 2.0 AA for web content;
+distributed to content providers and edX website content and technical support personnel for www.edx.org, our mobile applications, and our platform;
+Appointing a website accessibility coordinator who is knowledgeable on website accessibility and digital accessibility standards, responsible for coordinating edX's responsibilities with respect to accessibility, and responsible for developing the Accessibility Best Practices Guidance;
+
+  * Accessibility Coordinator
+  * Accessibility Team
+-->
+---
+
+## Support
+
+* Feedback form on Accessibility Policy page
+* Accessibility category on Contact Us page
+* Help form on every page in Courseware
+* Clear process for escalating support requests
+
+
+<!--
+soliciting and providing a method to submit feedback, and providing a method to contact knowledgeable edX personnel;
+-->
+---
+
+## Documentation (Authors)
+
+![Screenshot of Accessibility Best Practices which is available in our documentation website](assets/bestpractices.png)
+
+<!--
+Developing and distributing Accessibility Best Practices Guidance for content providers;
+-->
+---
+
+## Documentation (Developers)
+
+![Screenshot of Accessibility Guidelines for developers which is available in our documentation website](assets/devguidelines.png)
+
+<!--
+Developing and distributing Accessibility Best Practices Guidance for content providers;
+-->
+---
+## Training
+
+![Screenshot of Accessibility Training course](assets/trainingcourse.png)
+
+<!--
+Providing annual training to edX website content and technical support personnel on ensuring www.edx.org, our mobile applications, and our platform conform with WCAG 2.0 AA.
+-->
+
+---
+## Conformance
+
+* WCAG 2.0
+* Accessibility Team
+* Product/Feature Exit Requirements
+* Automated testing
+* Accessibility Review process
+  * Automated
+  * Manual
+
+---
+## Remediation
+
+* Outside Audits (annual)
+* Internal testing (automated and manual)
+* Public JIRA Project
+
+---
+
+class: title middle right
+
+## Measuring Compliance
+
+.subtitle[Web Content Accessibility Guidelines 2.0]
+
+.thirdtitle[Our commitment is to conform with WCAG 2.0 AA]
+
+---
+<h2>Adoption of WCAG 2.0</h2>
+
+<div style="width: 50%; float:left;">
+
+  <p>WCAG 2.0 (9 countries)</p>
+<ul>
+  <li>Australia</li>
+  <li>Canada</li>
+  <li>EU</li>
+  <li>Hong Kong</li>
+  <li>Ireland</li>
+  <li>Netherlands</li>
+  <li>New Zealand</li>
+  <li>Norway</li>
+  <li>United Kingdom</li>
+</ul>
+</div>
+<div style="width: 50%; float:left;">
+
+<p> Based on WCAG 2.0 (6 countries)</p>
+<ul>
+  <li>France</li>
+  <li>Germany</li>
+  <li>India</li>
+  <li>Japan</li>
+  <li>Ontario</li>
+  <li>Quebec</li>
+</ul>
+</div>
+
+---
+### WCAG 2.0 Core Principles
+
+* **Perceivable:**<br>Content must be presented in a way that all users can perceive it
+* **Operable:**<br>Components and navigation must be operable
+* **Understandable:**<br>Information and navigation must be understandable
+* **Robust:**<br>Content must be robust enough that it can be interpreted by a wide variety of user agents including assistive technology
+
+---
+### WCAG 2.0 
+
+* 4 Principles
+* 12 Guidelines
+* 65 Success Criteria (38 applicable to Level AA)
+
+---
+
+class: title middle right
+
+## Intro to Accessibility
+
+.subtitle[How you can help improve the accessibility of the Open edX Platform]
+
+---
+
+<!--
+The word everyone appears frequently in language we use to describe our goals, our values and our vision:
+
+accessible to people with disabilities requires a technical understanding of how they use technology (a.k.a. assistive or access technology) and empathy, so that we can more deeply understand the everyday challenges they face and how assistive technology can be used to overcome them.
+
+-->
+
+## Accessibility == Quality
+
+Change how we think about Accessibility
+
+* Not just for users with disabilities
+* Intuitive interfaces
+* Redundant means of access
+* Give users *choice* 
+* *A high quality product is accessible to **as many people as possible***
+
+<!--
+We can all appreciate a well-designed product. It's a product that feels solid, is intuitive to use, includes clever redundancies and shortcuts that allow us to use the product more efficiently, and offers us a choice in how we use it.  
+-->
+
+---
+### How does quality = accessibility?
+
+* Intuitive to use
+* Customizable 
+* Gives users options/choice
+  * Input
+  * Output
+
+---
+
+### Human-Computer Interaction
+
+Problems:
+
+* Input
+  * Support for too few (mouse)
+* Output
+  * Support for too many (images, video, audio, PDF, spreadsheets, simulations)
+    
+<!--
+## The typical computer user
+
+A typical user:
+
+* Clicks icons with a mouse;
+* Touches icons with their fingers;
+* Types text with a physical, standard, keyboard;
+* Scrolls pages up and down with a mouse wheel or trackpad;
+* Reads text with their eyes; and
+* Listens to audio content with their ears.
+
+When designing digital products, we often design it to our ideal specifications. Because people who design digital products are often very typical users, the products are often designed to be used by typical users.  When this happens, you end up with a product that is really only accessible to people who will use the product just like you do. To move beyond this and start building high quality products that are accessible to as many people as possible, we must first understand the various ways in which people can and do interact with digital products. 
+-->
+
+---
+### Human-Computer Interaction
+
+Solutions:
+
+* Input
+  * Support the keyboard
+* Output
+  * Text all the things
+
+---
+### Keyboard support (Input)
+
+* It's how it was done from the beginning
+* If it works with a keyboard, it works for things that emulate a keyboard
+  * Joysticks
+  * Sip-and-puff
+  * Speech input
+  * On-screen keyboards
+
+---
+### Text all the things (Output)
+
+Text can:
+
+* be transformed into sound,
+* be transformed into touch,
+* be translated into other languages,
+* become smaller or larger,
+* change color,
+* be assigned meta (magical) properties through the power of markup,
+* be read by machines!
+
+---
+
+class: title middle right
+
+## Accessibility Techniques
+
+---
+
+class: title middle right shift-up
+
+### Problem: All text is created equal
+
+.subtitle[Solution: Markup to the rescue!]
+
+.thirdtitle[*By itself, text has no semantic value*]
+
+---
+
+### Why is markup so important?
+
+*Software is really good at reading markup*
+
+* Assistive Technology (AT) relies on markup to determine the "role" the text plays
+* AT provides [shortcuts](http://doccenter.freedomscientific.com/doccenter/archives/training/jawskeystrokes.htm) to interact with markup
+* AT users benefit *greatly* from these shortcuts
+* Without proper markup, its just giant blobs of text
+
+---
+
+### Semantic Markup
+
+What "role" does the text play?
+
+* Is it a heading?
+* Is it a list, or an item in a list?
+* Is it a link?
+* An iframe?
+* Just a paragraph?
+* Does it identify a column or row in a table?
+
+*AT provides direct and enhanced access to all of these (and more). This functionality is not possible without the right markup.*
+
+---
+
+### Headings
+
+* All AT provides multiple ways for users to browse by heading (examples):
+  * Next heading (at any level)
+  * Next level 3 heading
+  * First heading
+  * First level 2 heading
+  
+Logical order is important
+  
+*This won't work if your text just looks like a heading*
+
+### This is a level 3 heading
+
+.fake-heading[This is not a level 3 heading]  
+
+---
+layout: true
+
+### Links
+
+---
+
+.float-right.scale50[![Screenshot of links list in Voiceover](assets/mIsec.png)]
+
+* All AT provides multiple ways of navigating between links on a page:
+  * By tabbing (of course)
+  * In an interactive list
+   * Where links can be directly accessed by how they are spelled or their order in the document
+
+---
+  
+Bad:
+
+* [Click here](#) to register
+* Article teaser [More...](#)
+* [Download](#) the white paper
+
+Good:
+
+* [Register for edX training](#)
+* [What is accessible content: Full Text](#)
+* [Download the PDF textbook](#)
+
+---
+layout: false
+
+### Color contrast
+
+* Minimum contrast ratio of 4.5 to 1
+* Large text can have a ratio of 3 to 1
+    * 18pt and 14pt bold<br>(roughly equivalent to 1.2 and 1.5 em or to 120% or 150% )
+    
+  <p style="font-size: 18pt">This is 18pt text</p>
+  <p style="font-size: 14pt; font-weight: bold;">This is 14pt bold</p>
+  
+*Contrast ratios or nearly impossible to analyze without the help of [color contrast analyzing tools/software](#tools)*
+
+---
+class: title middle left
+
+## Images
+
+.subtitle[We need to text all the images, too!]
+
+.thirdtitle[The ALT Attribute]
+
+---
+### Text alternatives (using the alt attribute)
+
+* Can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user.
+* Authoring useful alt attribute content requires the author to carefully consider the .highlight[context] in which the image appears and the .highlight[function] that image may have in that context.
+* Needs to be an appropriate .highlight[functional replacement] for the image.
+* Can't be too long or require additional markup
+
+---
+
+### How do I determine what is *useful* alt content? 
+
+*A good place to start is by asking the following questions:*
+
+* Why is the image being included in a page? 
+* What is its purpose?
+* Does it provide useful information?
+* Does it perform a function? 
+* Is it a label for an interactive element?
+* Is it purely decorative?
+
+*Answers to these questions can help you use a simple decision tree:*
+ 
+---
+
+### Is this image the only content of a link or form control?
+
+**Yes:** 
+       
+.float-right.center[![Screenshot of Introduction to Linux course card with an arrow highlighting the image linked to the course intro video](assets/EFAou.png)<br>![Screenshot of various social icons](assets/7xE4S.png)]
+   
+Use the alt attribute communicate the destination of the link or action taken
+
+*A good alt value for this image would be "Watch the 'Introduction to Linux' course video", which describes the action, not the image.*
+        
+**No:** Next slide!
+
+---
+
+### Does this image contain text?
+
+**Yes:** 
+ 
+.float-right.scale40[![Screenshot of stylized text that represents the 3 main topics on the page, verbatim](assets/T2axY.png)]
+       
+* If the text in the image is also present as real text nearby, .highlight[use an empty alt attribute] to hide the image from screen reader users.
+
+* If the text in the image is just for visual effect, use an empty alt attribute.
+
+* Otherwise, use the alt attribute to include the communicative text of the image.
+        
+**No:** Next slide! 
+ 
+---
+
+### Does this image contain text?
+
+**Yes:** 
+ 
+.float-right.scale40[![Screenshot of computer code transparently overlaying a computer keyboard](assets/LFS01_Ch0_Screen7.jpg)]
+             
+* If the text in the image is also present as real text nearby, use an empty alt attribute to hide the image from screen reader users.
+ 
+* If the text in the image is just for visual effect, .highlight[use an empty alt attribute].
+
+* Otherwise, use the alt attribute to include the communicative text of the image.
+        
+**No:** Next slide!
+
+---
+
+### Does this image contain text?
+
+**Yes:** 
+
+<figure class="float-right scale40">
+  <img src="assets/fGqVI.png" alt="Screenshot of stylized text illustrating 3 points">
+  <figcaption>Appropriate alt for this image would be: "1: Things change in linux. 2: We've repeated some things in the class. 3: We've tried to avoid holy wars."</figcaption>
+</figure>
+             
+* If the text in the image is also present as real text nearby, use an empty alt attribute to hide the image from screen reader users.
+        
+* If the text in the image is just for visual effect, use an empty alt attribute.
+
+* Otherwise, use the alt attribute to .highlight[include the communicative text of the image].
+        
+**No:** Next slide! 
+
+---
+
+### Does the image contribute meaning to the current page or context?
+
+* **Yes**, and it’s a simple graphic or photograph: .highlight[the alt attribute should briefly describe the image in a way that conveys that meaning].
+* **Yes**, and it’s a graph or complex piece of information: .highlight[include the information contained in the image elsewhere on the page].
+* **Yes**, but a suitable alt text is unknown at the time of publication (for example on a photo upload site): .highlight[provide an alt attribute or caption for the image that includes as much useful information as possible].
+        
+**No:**
+
+Next slide!
+ 
+---
+
+### Is the image purely decorative or not intended for the user?
+        
+* Use an .highlight[empty alt attribute].  This will make it invisible to a screen reader user.
+
+
+
+<!--
+EdX is committed to making the Open edX platform a fully accessible platform in
+alignment with our goals, values, vision and mission, to enable our partners and the
+community to create quality educational experiences for everyone. We will talk about
+efforts underway to make the platform WCAG 2.0 AA compliant (and what that even
+means), as well as addressing specific, common accessibility challenges that Open edX
+contributors may encounter.
+-->
+
+</textarea>
+    <script src="//gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        ratio: '16:9',
+        // Navigation options
+        navigation: {
+          // Enable or disable navigating using scroll
+          // Default: true
+          // Alternatives: false
+          scroll: false,
+
+          // Enable or disable navigation using touch
+          // Default: true
+          // Alternatives: false
+          touch: true,
+
+          // Enable or disable navigation using click
+          // Default: false
+          // Alternatives: true
+          click: true
+        },
+    });
+    </script>
+  </body>
+</html>
